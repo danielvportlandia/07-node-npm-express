@@ -1,22 +1,20 @@
 # Project Name
 
-**Author**: Your Name Goes Here
+**Author**: Sarah and Daniel
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+This application has a local server created from the Express framework that listens for changes on the new.html page and sends any new articles submitted to the server. It also has set up new routes for the index.html and new.html pages (/home and /new, respectively), and throws up a 404 page for any other routes.
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+User must initialize the project with 'npm init', install express and body-parser, and then set up their server with express and run it through node server (or nodemon). The user then has to set their port with a default of 3000, set up their routes, and set the application to listen from the port.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+This application uses HTML, CSS, JavaScript, jQuery, Handlebars, Express, Body Parser, nodemon, and Ajax.
 
 ## Change Log
-<!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
+03-21-2018 10:18:00 AM - Application has functioning server routes
+03-21-2018 10:33:00 AM - Application now also includes JSON files that were not pushed up on first push.
+03-21-2018 10:54:00 AM - Application has README finalized and all comments/reviews completed.
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
