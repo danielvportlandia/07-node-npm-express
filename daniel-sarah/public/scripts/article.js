@@ -52,5 +52,5 @@ Article.prototype.insertRecord = function(callback) {
       // PUT YOUR RESPONSE HERE
       console.log(callback);
       if (callback) callback();
-    })
+    });
 };
