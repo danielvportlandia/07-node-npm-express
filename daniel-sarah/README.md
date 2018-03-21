@@ -14,6 +14,7 @@ This application uses HTML, CSS, JavaScript, jQuery, Handlebars, Express, Body P
 
 ## Change Log
 03-21-2018 10:18:00 AM - Application has functioning server routes
-03-21-2018 10:28:00 AM - Application has README finalized and all comments/reviews completed.
+03-21-2018 10:33:00 AM - Application now also includes JSON files that were not pushed up on first push.
+03-21-2018 10:54:00 AM - Application has README finalized and all comments/reviews completed.
 
 ## Credits and Collaborations

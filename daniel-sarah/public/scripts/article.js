@@ -22,10 +22,10 @@ Article.prototype.toHtml = function() {
 };
 
 Article.loadAll = articleData => {
-  articleData.sort((a,b) => (new Date(b.publishedOn)) - (new Date(a.publishedOn)))
+  articleData.sort((a,b) => (new Date(b.publishedOn)) - (new Date(a.publishedOn)));
 
-  articleData.forEach(articleObject => Article.all.push(new Article(articleObject)))
-}
+  articleData.forEach(articleObject => Article.all.push(new Article(articleObject)));
+};
 
 Article.fetchAll = () => {
   if (localStorage.rawData) {
@@ -41,16 +41,16 @@ Article.fetchAll = () => {
         console.error(err);
       });
   }
-}
+};
 
-// REVIEW: This new prototype method on the Article object constructor will allow us to create a new article from the new.html form page, and submit that data to the back-end. We will see this log out to the server in our terminal!
+// DONE: This new prototype method on the Article object constructor will allow us to create a new article from the new.html form page, and submit that data to the back-end. We will see this log out to the server in our terminal!
 Article.prototype.insertRecord = function(callback) {
   $.post('/articles', {author: this.author, authorUrl: this.authorUrl, body: this.body, category: this.category, publishedOn: this.publishedOn, title: this.title})
     .then(data => {
       console.log(data);
-      // COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
-      // PUT YOUR RESPONSE HERE
-      console.log(callback);
+      // DONE: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
+      // The purpose of this line is to call the callback if there is one. Since there is not (because we didn't pass a callback into the function), this method is not called.
+      console.log('callback', callback);
       if (callback) callback();
     });
 };
